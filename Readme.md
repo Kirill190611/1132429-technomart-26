@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kirill Soldatov](https://up.htmlacademy.ru/htmlcss/26/user/1132429).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
