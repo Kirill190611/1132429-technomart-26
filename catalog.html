@@ -9,15 +9,15 @@
     
     <body>
         <header>
-            <h1>
+            <h1 class="visually-hidden">
                 Каталог интернет-магазина строительных материалов и инструментов для ремонта "Техномарт"
             </h1>
             <div>
                 <a href="/">Техномарт</a>
-                <label>
-                    Поиск
-                    <input type="text" name="search">
-                </label>
+                <label for="search">
+                        Поиск
+                </label>    
+                <input type="search" name="search" id="search">
                 <a href="bookmarks.html">
                     Закладки:
                 </a>
@@ -97,20 +97,10 @@
                         Фильтр:
                     </h3>
                     <div>
-                        <span>
+                        <label for="price">
                             Цена:    
-                        </span>
-                        <div aria-hidden="true">
-                            <div>
-                                <!-- задается линия -->
-                            </div>
-                            <div>
-                                <!-- ползунок для min значения -->
-                            </div>
-                            <div>
-                                <!-- ползунок для max значения -->
-                            </div>
-                        </div>
+                        </label>
+                        <input type="range" name="price" id="price" min='0' max='30000' step="1">
                         <div>
                             <div>
                                 <input type="text" name="range-min" autocomplete="off">    
@@ -142,10 +132,13 @@
                     <!-- Далее задаем сортировку по возврастанию/убыванию, но еще не могу это сделать -->
                 </div>
                 <div>
-                    <div>
-                        <h2>
+                    <h2 class="visually-hidden">
+                        Фильтр товаров
+                    </h2>
+                    <fieldset>
+                        <legend>
                             Производители: 
-                        </h2>
+                        </legend>
                         <ul>
                             <li>
                                 <input type="checkbox" name="Bosch" id="bosch" checked>
@@ -168,11 +161,11 @@
                                 <label for="hitachi">Hitachi</label>   
                             </li>
                         </ul>
-                    </div>
-                    <div>
-                        <h2>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
                             Питание:
-                        </h2>
+                        </legend>
                         <ul>
                             <li>
                                 <label>
@@ -187,8 +180,8 @@
                                 </label>
                             </li>
                         </ul>
-                    </div>
-                    <button type="button">
+                    </fieldset>
+                    <button type="submit">
                         Показать
                     </button>
                 </div>
@@ -482,5 +475,55 @@
                     </p>
                 </div>
             </footer>
+
+            <div>
+                <h2>
+                    Оформить заказ
+                </h2>
+                <form action="#">
+
+                </form>
+            </div>
+            <!-- Окно для "Оформить заказ" -->
+
+            <div>
+                <h2>
+                    Мои заказы
+                </h2>
+                <form action="#">
+
+                </form>
+            </div>
+            <!-- Окно для "Мои заказы" -->
+
+            <div>
+                <h2>
+                    Личный кабинет
+                </h2>
+                <form action="#">
+
+                </form>
+            </div>
+            <!-- Окно для "Личный кабинет" -->
+
+            <div>
+                <h2 class="visually-hidden">
+                    Окно при покупке товаров    
+                </h2>
+                <p>
+                    Товар добавлен в корзину!
+                </p>
+                <div>
+                    <button type="submit">
+                        Оформить заказ
+                    </button>
+                    <button type="button">
+                        Продолжить покупки
+                    </button>
+                </div>
+                <button type="button">
+                    Закрыть
+                </button>
+            </div>
     </body>
 </html>

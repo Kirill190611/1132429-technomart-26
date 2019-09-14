@@ -9,13 +9,13 @@
 
     <body>
         <header>
-            <h1>Главная страница интернет-магазина "Техномарт"</h1>
+            <h1 class='visually-hidden'>Главная страница интернет-магазина "Техномарт"</h1>
             <div>
                 <a href="/">Техномарт</a>
-                <label>
+                <label for="search">
                     Поиск
-                    <input type="text" name="search">
-                </label>
+                </label>    
+                <input type="search" name="search" id="search">
                 <a href="bookmarks.html">
                     Закладки:
                 </a>
@@ -364,7 +364,7 @@
                         Вы можете забрать товар сами, <br>
                         заехва в наш офис:
                     </p>
-                    <a href="map.html"></a>
+                    <a href="map.html">Карта</a>
                     <a href="ask_us.html">Заблудились? Напишите нам!</a>
                 </div>
             </section>
@@ -458,5 +458,159 @@
                 </p>
             </div>
         </footer>
+
+        <div>
+            <h2>
+                Оформить заказ
+            </h2>
+            <form action="#">
+
+            </form>
+        </div>
+        <!-- Окно для "Оформить заказ" -->
+
+        <div>
+            <h2>
+                Личный кабинет    
+            </h2>
+            <p>
+                Для входа в личный кабинет введите свой логин и пароль    
+            </p>
+            <form action="#" method="POST">
+                <p>
+                    <label for="user-login">
+                        Логин
+                    </label>
+                    <input type="text" name="login" id="user-login" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="user-password">
+                        Пароль
+                    </label>
+                    <input type="password" name="password" id="user-password" placeholder="********">
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="remember">
+                        Запомнить меня
+                    </label>
+                    <a href="#">
+                        Забыли пароль?
+                    </a>
+                </p>
+                <button type="submit">
+                    Войти
+                </button>
+            </form>
+            <button type="button">
+                Закрыть
+            </button>
+        </div>
+        <!-- Окно для "Войти" -->
+        
+        <div>
+            <h2>
+                Регистрация
+            </h2>
+            <p>
+                Для регистрации на сайте интернет-магазина Вам необходимо ввести данные ниже:
+            </p>
+            <form action="#">
+                <p>
+                    <label for="user-login">
+                        Имя пользователя
+                    </label>
+                    <input type="text" name="login" id="user-login" required>
+                </p>
+                <p>
+                    <label for="user-name">
+                        Ваше имя
+                    </label>
+                    <input type="text" name="name" id="user-name" required>
+                </p>
+                <p>
+                    <label for="user-patronymic">
+                        Ваше отчество
+                    </label>
+                    <input type="text" name="patronymic" id="user-patronymic" required>
+                </p>    
+                <p>
+                    <label for="user-surname">
+                        Ваша фамилия
+                    </label>
+                    <input type="text" name="surname" id="user-surname" required>
+                </p>
+                <p>
+                    <label for="user-email">
+                        Ваш e-mail
+                    </label>
+                    <input type="email" name="email" id="user-email" required>
+                </p>
+                <p>
+                    <label for="user-date">
+                        Дата рождения
+                    </label>
+                    <input type="date" name="date" id="user-date">
+                </p>
+                <p>
+                    <label for="user-tel">
+                        Ваш номер мобильного телефона
+                    </label>
+                    <input type="tel" name="tel" id="user-tel">
+                </p>
+                <p>
+                    Нажимая "Зарегистрироваться", Вы подтверждаете, что прочли и <br>
+                    принимаете условия <a href="#">условия обслуживания</a> и <a href="#">политику конфиденциальности</a>.
+                </p>
+                <button type="submit">
+                    Зарегистрироваться
+                </button>
+            </form>
+            <button type="button">
+                Закрыть
+            </button>
+        </div>
+        <!-- Окно для "Регистрация" -->
+
+        <div>
+            <h2 class="visually-hidden">
+                Заблудились?
+            </h2>
+            <div>
+                <p>
+                    <img src="img/map.jpg" width="940" height="446.2" alt="Офис компании по адресу г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">        
+                </p>
+                <button type="button">
+                    Закрыть
+                </button>
+            </div>
+            <div>
+                <form action="#" method="POST">
+                    <p>
+                        <label for="name">
+                        Ваше имя:
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p>
+                        <label for="mail">
+                        Ваш e-mail:
+                        </label>
+                        <input type="text" name="mail" id="mail" placeholder="email@example.com">
+                    </p>
+                    <p>
+                        <label for="text">
+                        Текст письма:
+                        </label>
+                        <input type="text" name="text" id="text" placeholder="В свободной форме">
+                    </p>
+                    <button type="submit">
+                        Отправить
+                    </button>    
+                </form>
+                <button type="button">Закрыть</button>
+            </div>    
+        </div>
+        <!-- Окно, которое открывается после перехода по "Заблудились? Напишите нам!"  -->
     </body>
 </html>
