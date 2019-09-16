@@ -14,10 +14,12 @@
             </h1>
             <div>
                 <a href="/">Техномарт</a>
-                <label for="search">
+                <div>
+                    <label for="search">
                         Поиск
-                </label>    
-                <input type="search" name="search" id="search">
+                    </label>    
+                    <input type="search" name="search" id="search">
+                </div>
                 <a href="bookmarks.html">
                     Закладки:
                 </a>
@@ -97,10 +99,12 @@
                         Фильтр:
                     </h3>
                     <div>
-                        <label for="price">
-                            Цена:    
-                        </label>
-                        <input type="range" name="price" id="price" min='0' max='30000' step="1">
+                        <div>
+                            <label for="price">
+                                Цена:    
+                            </label>
+                            <input type="range" name="price" id="price" min='0' max='30000' step="1">
+                        </div>
                         <div>
                             <div>
                                 <input type="text" name="range-min" autocomplete="off">    
@@ -514,9 +518,9 @@
                     Товар добавлен в корзину!
                 </p>
                 <div>
-                    <button type="submit">
+                    <a href="#">
                         Оформить заказ
-                    </button>
+                    </a>
                     <button type="button">
                         Продолжить покупки
                     </button>
