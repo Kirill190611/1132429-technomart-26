@@ -5,6 +5,9 @@
         <meta name="keywords" content="строительство, ремонт, строительные материалы, инструменты для ремонта, техника для строительства">
         <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
         <title>Каталог интернет-магазина строительных материалов и инструментов для ремонта "Техномарт"</title>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>
@@ -13,22 +16,28 @@
                 Каталог интернет-магазина строительных материалов и инструментов для ремонта "Техномарт"
             </h1>
             <div>
-                <a href="/">Техномарт</a>
                 <div>
+                    <a href="/">Техномарт</a>
+                </div>
+                <div>
+                <form action="https://echo.htmlacademy.ru" method="post">
                     <label for="search">
                         Поиск
                     </label>    
                     <input type="search" name="search" id="search">
+                </form>
                 </div>
-                <a href="bookmarks.html">
-                    Закладки:
-                </a>
-                <a href="recycle_bin.html">
-                    Корзина:
-                </a>
-                <a href="checkout.html">
-                    Оформить заказ
-                </a>
+                <div>
+                    <a href="bookmarks.html">
+                        Закладки:
+                    </a>
+                    <a href="recycle_bin.html">
+                        Корзина:
+                    </a>
+                    <a href="checkout.html">
+                        Оформить заказ
+                    </a>
+                </div>
             </div>
             <div>
                 <div>
@@ -99,25 +108,27 @@
                         Фильтр:
                     </h3>
                     <div>
-                        <div>
-                            <label for="price">
-                                Цена:    
-                            </label>
-                            <input type="range" name="price" id="price" min='0' max='30000' step="1">
-                        </div>
-                        <div>
+                        <form action="https://echo.htmlacademy.ru" method="post">
                             <div>
-                                <input type="text" name="range-min" autocomplete="off">    
+                                <label for="price">
+                                    Цена:    
+                                </label>
+                                <input type="range" name="price" id="price" min='0' max='30000' step="1">
                             </div>
-                            <!-- min salary -->
-                            <i>
-                                -
-                            </i>
                             <div>
-                                <input type="text" name="range-max" autocomplete="off">    
-                            </div>
-                             <!-- max salary -->
-                        </div>    
+                                <div>
+                                    <input type="text" name="range-min" autocomplete="off">    
+                                </div>
+                                <!-- min salary -->
+                                <i>
+                                    -
+                                </i>
+                                <div>
+                                    <input type="text" name="range-max" autocomplete="off">    
+                                </div>
+                                <!-- max salary -->
+                            </div>  
+                        </form>  
                     </div>
                 </div>
                 <div>
@@ -139,55 +150,57 @@
                     <h2 class="visually-hidden">
                         Фильтр товаров
                     </h2>
-                    <fieldset>
-                        <legend>
-                            Производители: 
-                        </legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="Bosch" id="bosch" checked>
-                                <label for="bosch">Bosch</label> 
-                            </li>
-                            <li>
-                                <input type="checkbox" name="interskol" id="interskol">
-                                <label for="interskol">Интерскол</label>   
-                            </li>
-                            <li>
-                                <input type="checkbox" name="makita" id="makita" checked>
-                                <label for="makita">Makita</label>      
-                            </li>
-                            <li>    
-                                <input type="checkbox" name="dewalt" id="dewalt">
-                                <label for="dewalt">Dewalt</label>    
-                            </li>
-                            <li>
-                                <input type="checkbox" name="hitachi" id="hitachi">
-                                <label for="hitachi">Hitachi</label>   
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            Питание:
-                        </legend>
-                        <ul>
-                            <li>
-                                <label>
-                                    <input type="radio" name='accum' value='accumulator'> 
-                                    Аккумуляторные
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="radio" name="network" value="network">
-                                    Сетевые
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button type="submit">
-                        Показать
-                    </button>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <fieldset>
+                            <legend>
+                                Производители: 
+                            </legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="Bosch" id="bosch" checked>
+                                    <label for="bosch">Bosch</label> 
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="interskol" id="interskol">
+                                    <label for="interskol">Интерскол</label>   
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="makita" id="makita" checked>
+                                    <label for="makita">Makita</label>      
+                                </li>
+                                <li>    
+                                    <input type="checkbox" name="dewalt" id="dewalt">
+                                    <label for="dewalt">Dewalt</label>    
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="hitachi" id="hitachi">
+                                    <label for="hitachi">Hitachi</label>   
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                Питание:
+                            </legend>
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name='accum' value='accumulator'> 
+                                        Аккумуляторные
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="network" value="network">
+                                        Сетевые
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button type="submit">
+                            Показать
+                        </button>
+                    </form>
                 </div>
                 <div>
                     <article>
@@ -484,7 +497,7 @@
                 <h2>
                     Оформить заказ
                 </h2>
-                <form action="#">
+                <form action="https://echo.htmlacademy.ru" method="post">
 
                 </form>
             </div>
@@ -494,7 +507,7 @@
                 <h2>
                     Мои заказы
                 </h2>
-                <form action="#">
+                <form action="https://echo.htmlacademy.ru" method="post">
 
                 </form>
             </div>
@@ -504,7 +517,7 @@
                 <h2>
                     Личный кабинет
                 </h2>
-                <form action="#">
+                <form action="https://echo.htmlacademy.ru" method="post">
 
                 </form>
             </div>
