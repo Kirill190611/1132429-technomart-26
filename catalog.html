@@ -11,79 +11,79 @@
     </head>
     
     <body>
-        <header>
+        <header class="top-background">
             <h1 class="visually-hidden">
                 Каталог интернет-магазина строительных материалов и инструментов для ремонта "Техномарт"
             </h1>
-            <div>
+            <div class="menu-back">
                 <div>
-                    <a href="/">Техномарт</a>
-                    <form action="https://echo.htmlacademy.ru" method="post">
+                    <a href="/" class="logo-back logo">Техномарт</a>
+                    <form action="https://echo.htmlacademy.ru" method="post" class="search">
                         <label for="search">
                             Поиск
                         </label>    
                         <input type="search" name="search" id="search">
                     </form>
                 </div>
-                <div>
+                <div class="shopping-menu">
                     <a href="bookmarks.html">
                         Закладки:
                     </a>
                     <a href="recycle_bin.html">
                         Корзина:
                     </a>
-                    <a href="checkout.html">
+                    <a href="checkout.html" class="make-order">
                         Оформить заказ
                     </a>
                 </div>
             </div>
             <div>
                 <div>
-                    <p>
+                    <p class="full-name">
                         Интернет-магазин <br>
                         строительных материалов <br>
                         и инструментов для ремонта
                     </p>
-                    <a href="tel:78125550555">+7(812)555-05-55</a>
-                    <address>
+                    <a href="tel:78125550555" class="phone-back phone">+7(812)555-05-55</a>
+                    <address class="adress-header">
                         г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
                     </address>
-                    <p>
+                    <p class="user-back user">
                         Равшан Джамшутович
                     </p>
-                    <a href="my_order.html">Мои заказы</a>
-                    <a href="personal_area.html">Личный кабинет</a>
+                    <a href="my_order.html" class="button-personal">Мои заказы</a>
+                    <a href="personal_area.html" class="button-personal">Личный кабинет</a>
                 </div>
-                <nav>
+                <nav class="main-navigation">
                     <ul>
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a href="index.html" class="index-header">Главная</a>
                         </li>
                         <li>
-                            <a href="company.html">Компания</a>
+                            <a href="company.html" class="company-header">Компания</a>
                         </li>
                         <li>
-                            <a href="/">Каталог</a>
+                            <a href="/" class="catalog-header">Каталог</a>
                         </li>
                         <li>
-                            <a href="news.html">Новости</a>
+                            <a href="news.html" class="news-header">Новости</a>
                         </li>
                         <li>
-                            <a href="special_offers.html">Спецпредложения</a>
+                            <a href="special_offers.html" class="special-offers-header">Спецпредложения</a>
                         </li>
                         <li>
-                            <a href="delivery.html">Доставка</a>
+                            <a href="delivery.html" class="delivery-header">Доставка</a>
                         </li>
                         <li>
-                            <a href="contacts.html">Контакты</a>
+                            <a href="contacts.html" class="contacts-header">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main>
-            <ul>
+        <main class="inner-page">
+            <ul class="page-menu">
                 <li>
                     <a href="index.html">Главная</a>
                 </li>
@@ -98,38 +98,38 @@
                 </li>
             </ul>
             <section>
-                <h2>
+                <h2 class="puncher-back puncher">
                     Перфораторы
                 </h2>
                 <div>
-                    <h3>
+                    <h3 class="filter-back filter">
                         Фильтр:
                     </h3>
                     <div>
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <div>
-                                <label for="price">
+                                <label for="price" class="price">
                                     Цена:    
                                 </label>
-                                <input type="range" name="price" id="price" min='0' max='30000' step="1">
+                                <input class="range-back" type="range" name="price" id="price" min='0' max='30000' step="1">
                             </div>
                             <div>
                                 <div>
-                                    <input type="text" name="range-min" autocomplete="off">    
+                                    <input class="input-back input" type="text" name="range-min" autocomplete="off">    
                                 </div>
                                 <!-- min salary -->
                                 <i>
                                     -
                                 </i>
                                 <div>
-                                    <input type="text" name="range-max" autocomplete="off">    
+                                    <input class="input-back input" type="text" name="range-max" autocomplete="off">    
                                 </div>
                                 <!-- max salary -->
                             </div>  
                         </form>  
                     </div>
                 </div>
-                <div>
+                <div class="sorting-back">
                     <h3>
                         Сортировка:
                     </h3>
@@ -148,9 +148,9 @@
                     <h2 class="visually-hidden">
                         Фильтр товаров
                     </h2>
-                    <form action="https://echo.htmlacademy.ru" method="post">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="sorting">
                         <fieldset>
-                            <legend>
+                            <legend class="suppliers"> 
                                 Производители: 
                             </legend>
                             <ul>
@@ -177,7 +177,7 @@
                             </ul>
                         </fieldset>
                         <fieldset>
-                            <legend>
+                            <legend class="supply">
                                 Питание:
                             </legend>
                             <ul>
@@ -195,23 +195,23 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <button type="submit">
+                        <button type="submit" class="show-back show">
                             Показать
                         </button>
                     </form>
                 </div>
                 <div>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 3000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             22500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             15500 Р.
                         </p>
                         <div>
@@ -220,17 +220,17 @@
                             <a href="#">В закладки</a>
                         </div>
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 6000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             30500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             25500 P.
                         </p>
                         <div>
@@ -239,17 +239,17 @@
                             <a href="#">В закладки</a>
                         </div>
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 2000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             <!-- Старая цена -->
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             12500 Р.
                         </p>
                         <div>
@@ -258,17 +258,17 @@
                             <a href="#">В закладки</a>  
                         </div>                      
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 3000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             22500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             15500 Р.
                         </p>
                         <div>
@@ -277,17 +277,17 @@
                             <a href="#">В закладки</a>   
                         </div> 
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 6000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             30500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             25500 P.
                         </p>
                         <div>
@@ -296,17 +296,17 @@
                             <a href="#">В закладки</a>
                         </div>
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 2000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             <!-- Старая цена -->
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             12500 Р.
                         </p>
                         <div>
@@ -315,17 +315,17 @@
                             <a href="#">В закладки</a> 
                         </div>  
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 3000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             22500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             15500 Р.
                         </p>
                         <div>
@@ -334,17 +334,17 @@
                             <a href="#">В закладки</a> 
                         </div>   
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 6000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             30500 Р.
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             25500 P.
                         </p>
                         <div>
@@ -353,17 +353,17 @@
                             <a href="#">В закладки</a>
                         </div>
                     </article>
-                    <article>
+                    <article class="items">
                         <h3>
                             <a href="catalog-items.html">
                                 <span>Перфоратор Bosch</span>
                                 <span>BFG 2000</span>
                             </a>
                         </h3>
-                        <p>
+                        <p class="price-old">
                             <!-- Старая цена -->
                         </p>
-                        <p>
+                        <p class="price-new-button price-new">
                             12500 Р.
                         </p>
                         <div>
@@ -375,22 +375,22 @@
                 </div>
             </section>
 
-            <div>
+            <div class='inner-menu'>
                 <ul>
-                    <li>
+                    <li class="next-back next">
                         <a href="#">1</a>
                     </li>
-                    <li>
+                    <li class="next-back next">
                         <a href="#">2</a>
                     </li>
-                    <li>
+                    <li class="next-back next">
                         <a href="3">3</a>
                     </li>
                 </ul>
-                <button type="button">Следующая</button>
+                <button type="button" class="next-page"><span>Следующая</span></button>
             </div>
 
-            <section>
+            <section class="about-punchers">
                 <h2>
                     Пара слов о перфораторах
                 </h2>
@@ -405,57 +405,57 @@
         <footer>
                 <div>
                     <div>
-                        <a href="/">Техномарт</a>
-                        <nav>
+                        <a href="/" class="logo-footer logo">Техномарт</a>
+                        <nav class="footer-navigation">
                             <ul>
                                 <li>
-                                    <a href="company.html">Компания</a>
+                                    <a href="company.html" class="company-footer">Компания</a>
                                 </li>
                                 <li>
-                                    <a href="news.html">Новости</a>
+                                    <a href="news.html" class="news-footer">Новости</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.html">Каталог</a>
+                                    <a href="catalog.html" class="catalog-footer">Каталог</a>
                                 </li>
                                 <li>
-                                    <a href="delivery.html">Доставка</a>
+                                    <a href="delivery.html" class="delivery-footer">Доставка</a>
                                 </li>
                                 <li>
-                                    <a href="contacts.html">Контакты</a>
+                                    <a href="contacts.html" class="contacts-footer">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div>
-                        <address>
+                        <address class="info">
                             г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
                         </address>
-                        <a href="tel:78125550555">+7(812)555-05-55</a>
-                        <nav>
+                        <a href="tel:78125550555" class="info">+7(812)555-05-55</a>
+                        <nav class="additional-navigation">
                             <ul>
                                 <li>
-                                    <a href="materials.html">Материалы</a>
+                                    <a href="materials.html" class="material-footer">Материалы</a>
                                 </li>
                                 <li>
-                                    <a href="equipment.html">Техника</a>
+                                    <a href="equipment.html" class="equipment-footer">Техника</a>
                                 </li>
                                 <li>
-                                    <a href="tools.html">Инструмент</a>
+                                    <a href="tools.html" class="tools-footer">Инструмент</a>
                                 </li>
                                 <li>
-                                    <a href="special_offers.html">Спецпредложения</a>
+                                    <a href="special_offers.html" class="special-offers-footer">Спецпредложения</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div>
+                <div class="footer-contacts-back">
                     <p>
                         &#169; 2010-2017 Компания "Техномарт" <br>
                         Все права защищены
                     </p>
                     <ul>
-                        <li>
+                        <li class="vk">
                             <a href="#">
                                 <span>
                                     Наша страница ВКонтакте
@@ -463,7 +463,7 @@
                                 <img src="img/vk-icon.svg" width="26" height="16" alt="Страница ВКонтакте">
                             </a>
                         </li>
-                        <li>
+                        <li class="facebook">
                             <a href="#">
                                 <span>
                                     Наша страница в Фейсбук
@@ -471,7 +471,7 @@
                                 <img src="img/fb-icon.svg" width="12" height="22" alt="Страница в Фейсбук">
                             </a>
                         </li>
-                        <li>
+                        <li class="instagram">
                             <a href="#">
                                 <span>
                                     Наша страница в Инстаграм
@@ -482,11 +482,11 @@
                     </ul>
                     <p>
                         Обратная связь: <br>
-                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        <a href="mailto:mail@htmlacademy.ru" class="mail">mail@htmlacademy.ru</a>
                     </p>
                     <p>
                         Разработано &#8211; <br>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a> 
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" class="website">htmlacademy.ru</a> 
                     </p>
                 </div>
             </footer>
