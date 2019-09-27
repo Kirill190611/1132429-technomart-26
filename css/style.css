@@ -1,5 +1,4 @@
-body 
-{
+body {
     margin: 0;
     padding: 0;
 
@@ -10,11 +9,10 @@ body
     color: #000000;
 
     background-color: #ffffff;
-    width: 1200px;
+    width: 100%;
 }
 
-.visually-hidden 
-{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -25,113 +23,108 @@ body
     overflow: hidden;
 }
 
-a 
-{
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    min-height: 42px;
+    margin-bottom: 46px;
+    background-color: #293449;
+}
+
+.top-bar .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.top-menu {
+    min-height: 278px;
+    padding-top: 46px;
+    padding-bottom: 60px; 
+    background-color: #f4f7f9;
+}
+
+a {
     text-decoration: none;
 }
 
-.top-background
-{
+.top-background {
     width: 1200px;
-    height: 320px;
+    min-height: 320px;
+    margin-bottom: 59px;
     background-color: #f4f7f9; 
 }
 
-.menu-back
-{
-    width: 1200px;
-    height: 42px;
-    background-color: #32425c;
-}
-
-
-.logo-back
-{
+.logo-back {
     width: 220px;
-    height: 47px;
+    min-height: 47px;
     background-color: #ee3643;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-    position: absolute;
-    margin: 0px 850px 0px 130px;
-    border: 0px solid #ee3643;
 }
 
-.logo
-{
+.logo {
     width: 109px;
-    height: 19px;
+    min-height: 19px;
     object-fit: contain;
     color: #ffffff;
     font-size: 19px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    padding: 13px 56px 15px 55px;
 }
 
-.search 
-{
+.search {
     width: 41px;
-    height: 12px;
+    min-height: 12px;
     color: #ffffff;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06px;
     letter-spacing: normal;
     text-align: left;
-    position: absolute;
-    margin: 14px 760px 16px 399px;
 }
 
-.shopping-menu a
-{
+.shopping-menu {
+    min-height: 42px;
+}
+
+.shopping-menu a {
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
     letter-spacing: normal;
     text-align: left;
-    position: absolute;
     color: #ffffff;
 }
 
-.shopping-menu a:nth-child(1) 
-{
-    margin: 14px 458px 13px 664px;
-}
-
-.shopping-menu a:nth-child(2) 
-{
-    margin: 14px 311px 13px 820px;
-}
-
-.shopping-menu .make-order 
-{
+.shopping-menu .make-order {
     width: 150px;
-    height: 42px;
+    min-height: 42px;
     background-color: #63a63e;
     color: #ffffff;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
     letter-spacing: normal;
     text-align: center;
-    padding: 12px 22px 13px 20px;
-    margin: 0px 130px 0px 920px;
-    position: absolute;
 }
 
-.full-name 
-{
+.full-name {
     width: 196px;
-    height: 60px;
+    min-height: 60px;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: italic;
     font-stretch: normal;
     line-height: 1.44;
@@ -140,34 +133,30 @@ a
     color: #ee3643;
 }
 
-.phone-back 
-{
+.phone-back {
     width: 270px;
-    height: 45px;
+    min-height: 45px;
     border: 3px solid #ffffff;
 }
 
-.phone 
-{
+.phone {
     width: 144px;
-    height: 21px;
+    min-height: 21px;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     color: #ee3643;
     text-align: left;
-    padding: 13px 52px 11px 74px;
 }
 
-.adress-header 
-{
+.adress-header {
     width: 250px;
-    height: 13px;
+    min-height: 13px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.71;
@@ -176,62 +165,54 @@ a
     color: #32425c;
 }
 
-.entry-back 
-{
+.entry-back {
     width: 121px;
-    height: 45px;
+    min-height: 45px;
     background-color: #ffffff;
 }
 
-.entry-back span 
-{
+.entry-back span {
     width: 46px;
-    height: 16px;
+    min-height: 16px;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    padding: 14px 27px 15px 48px;
 }
 
-.register-back 
-{
+.register-back {
     width: 150px;
-    height: 45px;
+    min-height: 45px;
     background-color: #ffffff;
 }
 
-.register-back span 
-{
+.register-back span {
     width: 100px;
-    height: 20px;
+    min-height: 20px;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    padding: 14px 25px 11px 25px;
 }
 
-.main-navigation 
-{
+.main-navigation {
     width: 940px;
     height: 60px;
     background-color: #32425c;
     box-shadow: inset 0px -5px 0 0 var(--dark);
 }
 
-.main-navigation a 
-{
+.main-navigation a {
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -241,95 +222,73 @@ a
     color: #ffffff;
 }
 
-.main-navigation li 
-{
+.main-navigation li {
     list-style-type: none;
 }
 
-.index-header 
-{
+.index-header {
     width: 52px;
     height: 12px;
-    margin: 22px 836px 26px 52px;
 }
 
-.company-header 
-{
+.company-header {
     width: 65px;
     height: 12px;
-    margin: 22px 706px 26px 169px;
 }
 
-.catalog-header 
-{
+.catalog-header {
     width: 52px;
     height: 12px;
-    margin: 22px 594px 26px 294px;
 }
 
-.news-header 
-{
+.news-header {
     width: 52px;
     height: 12px;
-    margin: 22px 482px 26px 406px;
 }
 
-.special-offers-header 
-{
+.special-offers-header {
     width: 121px;
     height: 15px;
-    margin: 22px 302px 23px 517px;  
 }
 
-.delivery-header 
-{
+.delivery-header {
     width: 60px;
     height: 15px;
-    margin: 22px 180px 23px 700px;
 }
 
-.contacts-header 
-{
+.contacts-header {
     width: 61px;
-    height: 12px;
-    margin: 22px 55px 26px 824px;  
+    height: 12px; 
 }
 
-.article-size 
-{
+.article-size {
     width: 300px;
     height: 123px;
 }
 
-.article-size a:link
-{
+.article-size a:link {
     color: #ffffff;
 }
 
-.yellow 
-{
+.yellow {
     background-color: #ffbf47;    
 }
 
-.blue 
-{
+.blue {
     background-color: #3bbce3;
 }
 
-.pink 
-{
+.pink {
     background-color: #dc91d8;
 }
 
-.green 
-{
+.green {
     background-color: #8ed78f;
 }
 
-.article-basis 
-{
+.article-basis {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.25;
@@ -338,14 +297,13 @@ a
     color: #ffffff;
 }
 
-.article-additional 
-{
+.article-additional {
     width: 135px;
     height: 38px;
     opacity: 0.1;
     background-color: #000000;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
@@ -354,17 +312,15 @@ a
     color: #ffffff;
 }
 
-.wrapper div 
-{ 
+.wrapper div { 
     width: 620px;
     height: 266px;
     object-fit: contain;
 }
 
-.wrapper h3 
-{
+.wrapper h3 {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -373,10 +329,9 @@ a
     color: #ffffff;
 }
 
-.wrapper span 
-{
+.wrapper span {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -385,18 +340,15 @@ a
     color: #ffffff;    
 }
 
-.wrapper-drill 
-{
+.wrapper-drill {
     background-image: url("img/slider-image.jpg") no-repeat;
 }
 
-.wrapper-puncher
-{
+.wrapper-puncher{
     background-image: url("img/slide-image.jpg") no-repeat;
 }
 
-.open-catalog 
-{
+.open-catalog {
     width: 195px;
     height: 38px;
     background-color: #ee3643;
@@ -405,77 +357,65 @@ a
     text-align: center;
     vertical-align: middle;
     border-radius: 2px;
-    margin: 205px 400px 23px 25px;
 }
 
-.open-catalog span
-{
+.open-catalog span {
     width: 101px;
     height: 10px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
     letter-spacing: normal;
     color: #ffffff;
-    padding: 14px 45px 14px 49px;  
 }
 
-/* .popular-goods 
-{
+.popular-goods {
     width: 940px;
     height: 428px;
-}  */
+} 
 
-.popupal-goods-menu
-{
+.popupal-goods-menu {
     width: 940px;
     height: 89px;
     background-color: #f9f6f0; 
 }
 
-.popupal-goods-menu h2
-{
+.popupal-goods-menu h2 {
     width: 260px;
     height: 21px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
     color: #32425c;
-    margin: 33px 650px 35px 30px;
 }
 
-.popular-button 
-{
+.popular-button {
     width: 253px;
     height: 38px;
     background-color: #ee3643;
-    margin: 25px 24px 26px 663px;
     border-radius: 2px;
 }
 
-.popular-button span 
-{
+.popular-button span {
     width: 143px;
     height: 10px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    margin: 14px 55px 14px 55px;
 }
 
-.popular-goods .items 
-{
+.popular-goods .items {
     width: 220px;
     height: 318px;
     border: solid 1px #eaeaea;
@@ -483,13 +423,12 @@ a
     float: left;
 }
 
-.items h3
-{
+.items h3 {
     width: 155px;
     height: 33px;
     font-family: 'PT Sans' sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.11;
@@ -498,18 +437,16 @@ a
     color: #000000; 
 }
 
-.items a:link
-{
+.items a:link {
     color: #000000;     
 }
 
-.price-old
-{
+.price-old {
     width: 67px;
     height: 12px;
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
@@ -519,8 +456,7 @@ a
     color: #a9a9a9;  
 }
 
-.price-new-button
-{
+.price-new-button {
     width: 141px;
     height: 38px;
     object-fit: contain;
@@ -528,36 +464,32 @@ a
     border-radius: 2px;
 }
 
-.price-new 
-{
+.price-new {
     width: 65px;
     height: 12px;
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    padding: 13px 40px 13px 36px;  
 }
 
-.popular-suppliers
-{
+.popular-suppliers {
     width: 940px;
     height: 89px;
     background-color: #f9f5f0;
     margin: 359px 0px 0px 0px;
 }
 
-.popular-suppliers h2
-{
+.popular-suppliers h2 {
     width: 364px;
     height: 26px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -566,8 +498,7 @@ a
     color: #32425c;
 }
 
-.popular-suppliers a
-{
+.popular-suppliers a {
     width: 253px;
     height: 38px;
     background-color: #ee3643;
@@ -575,12 +506,11 @@ a
     border-radius: 2px;
 }
 
-.popular-suppliers span 
-{
+.popular-suppliers span {
     width: 114px;
     height: 12px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
@@ -590,8 +520,7 @@ a
     margin: 13px 70px 13px 69px;    
 }
 
-.brand-background
-{
+.brand-background {
     width: 220px;
     height: 145px;
     border: solid 1px #eaeaea;
@@ -599,30 +528,26 @@ a
     float: left;
 }
 
-.brand-background a
-{
+.brand-background a {
     text-align: center;
 }
 
-.brand-background .center
-{
+.brand-background .center {
     display: block;
     margin: 0 auto;
 }
 
-.section-back
-{
+.section-back {
     width: 1200px;
     height: 522px;
     background-color: #f4f7f9;
     margin: 415px 0px 0px 0px; 
 }
 
-.section-back p
-{
+.section-back p {
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.85;
@@ -631,12 +556,11 @@ a
     color: #000000;    
 }
 
-.section-back .delivery 
-{
+.section-back .delivery {
     width: 142px;
     height: 30px;
     font-size: 36px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -645,12 +569,11 @@ a
     color: #32425c;    
 }
 
-.section-back .service
-{
+.section-back .service {
     width: 104px;
     height: 21px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -659,8 +582,7 @@ a
     color: #000000; 
 }
 
-.section-back li 
-{
+.section-back li {
     list-style-type: none;
     width: 240px;
     height: 61px;
@@ -669,39 +591,33 @@ a
     color: #ffffff;
 }
 
-.section-back a:link
-{
+.section-back a:link {
     color: #ffffff;     
 }
 
-.section-back li:hover
-{
+.section-back li:hover {
     box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
     background-color: #293449;
     color: #ffffff;    
 }
 
-.section-back li:active
-{
+.section-back li:active {
     box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
     background-color: #ffffff;   
     color: #32425c; 
 }
 
-.section-back a:link:hover
-{
+.section-back a:link:hover {
     color: #ffffff;    
 }
 
-.section-back a:link:active
-{
+.section-back a:link:active {
     color: #32425c;    
 }
 
-.about-company h2
-{
+.about-company h2 {
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -710,11 +626,10 @@ a
     color: #000000;
 }
 
-.about-company p
-{
+.about-company p {
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.85;
@@ -723,10 +638,9 @@ a
     color: #000000;
 }
 
-.about-company li
-{
+.about-company li {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.11;
@@ -735,16 +649,14 @@ a
     color: #000000;    
 }
 
-.company-button
-{
+.company-button {
     height: 38px;
     background-color: #ee3643;    
 }
 
-.about-company a
-{
+.about-company a {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
@@ -753,30 +665,25 @@ a
     color: #ffffff;
 }
 
-.about-company a:link
-{
+.about-company a:link {
     color: #ffffff;
 }
 
-.about-company .button-company-width
-{
+.about-company .button-company-width {
     width: 220px;    
 }
 
-.about-company .button-ask-width
-{
+.about-company .button-ask-width {
     width: 300px;    
 }
 
-footer
-{
+footer {
     width: 1200px;
     height: 300px;
     background-color: #32425c;
 }
 
-.logo-footer
-{
+.logo-footer {
     width: 220px;
     height: 68px;
     background-color: #ee3643;
@@ -786,23 +693,21 @@ footer
     border: 0px solid #ee3643;
 }
 
-footer .logo
-{
+footer .logo {
     width: 138px;
     height: 23px;
     object-fit: contain;
     color: #ffffff;
     font-size: 19px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     padding: 13px 56px 15px 55px;
 }
 
-.footer-navigation a 
-{
+.footer-navigation a {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -812,52 +717,45 @@ footer .logo
     color: #f1f5f7;
 }
 
-.footer-navigation li 
-{
+.footer-navigation li {
     list-style-type: none;
 }
 
-.company-footer
-{
+.company-footer {
     width: 69px;
     height: 13px;
     margin: 42px 608px 245px 523px;
 }
 
-.news-footer
-{
+.news-footer {
     width: 55px;
     height: 13px;
     margin: 42px 493px 245px 652px;    
 }
 
-.catalog-footer
-{
+.catalog-footer {
     width: 55px;
     height: 13px;
     margin: 42px 378px 245px 767px;    
 }
 
-.delivery-footer
-{
+.delivery-footer {
     width: 63px;
     height: 16px;
     margin: 42px 255px 242px 882px;
 }
 
-.contacts-footer 
-{
+.contacts-footer {
     width: 65px;
     height: 13px;
     margin: 42px 130px 245px 1005px;    
 }
 
-footer .info
-{
+footer .info {
     width: 322px;
     height: 40px;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -866,10 +764,9 @@ footer .info
     color: #f3f7f9;
 }
 
-.additional-navigation a
-{
+.additional-navigation a {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -879,41 +776,35 @@ footer .info
     color: #ffd180;    
 }
 
-.additional-navigation li
-{
+.additional-navigation li {
     list-style-type: none;    
 }
 
-.material-footer
-{
+.material-footer {
     width: 79px;
     height: 17px;
     margin: 45px 575px 183px 546px;    
 }
 
-.equipment-footer
-{
+.equipment-footer {
     width: 56px;
     height: 13px;
     margin: 45px 459px 187px 685px;    
 }
 
-.tools-footer
-{
+.tools-footer {
     width: 82px;
     height: 17px;
     margin: 45px 317px 183px 801px;   
 }
 
-.special-offers-footer
-{
+.special-offers-footer {
     width: 127px;
     height: 17px;
     margin: 45px 130px 183px 943px;    
 }
 
-.footer-contacts-back
-{
+.footer-contacts-back {
     width: 1200px;
     height: 107px;
     background-color: #293449;
@@ -921,10 +812,9 @@ footer .info
     top: 76px;
 }
 
-.footer-contacts-back p
-{
+.footer-contacts-back p {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.13;
@@ -933,20 +823,17 @@ footer .info
     color: #ffffff;    
 }
 
-.footer-contacts-back ul
-{
+.footer-contacts-back ul {
     padding: 35px 548px 30px 520px;
     position: absolute;
     text-align: left;
 }
 
-.footer-contacts-back li
-{
+.footer-contacts-back li {
     list-style-type: none;  
 }
 
-.vk 
-{
+.vk {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -954,8 +841,7 @@ footer .info
     margin: 35px 638px 30px 520px;
 }
 
-.facebook 
-{
+.facebook {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -963,8 +849,7 @@ footer .info
     margin: 35px 593px 30px 565px;    
 }
 
-.instagram
-{
+.instagram {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -972,9 +857,8 @@ footer .info
     margin: 35px 548px 30px 610px; 
 }
 
-.mail 
-{   
-    font-weight: normal;
+.mail {   
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.13;
@@ -984,9 +868,8 @@ footer .info
     color: #ffd180; 
 }
 
-.website 
-{
-    font-weight: normal;
+.website {
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.13;
@@ -996,10 +879,9 @@ footer .info
     color: #ffd180;
 }
 
-/* inher page */
+/* inner page */
 
-.user-back
-{
+.user-back {
     width: 299px;
     height: 45px;
     background-color: #ffffff;
@@ -1007,12 +889,11 @@ footer .info
     margin: 102px 199px 198px 818px;       
 }
 
-.user 
-{
+.user {
     width: 183px;
     height: 20px;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -1022,10 +903,9 @@ footer .info
     margin: 14px 69px 11px 47px;    
 }
 
-.button-personal
-{
+.button-personal {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.13;
@@ -1034,11 +914,10 @@ footer .info
     color: #32425c;    
 }
 
-.page-menu
-{
+.page-menu {
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1047,29 +926,25 @@ footer .info
     color: #000000;    
 }
 
-.page-menu li
-{
+.page-menu li {
     list-style-type: none;    
 }
 
-.page-menu a:link
-{
+.page-menu a:link {
     color: #000000;
 }
 
-.puncher-back
-{
+.puncher-back {
     width: 940px;
     height: 89px;
     background-color: #f2f6f8;
 }
 
-.puncher h2
-{
+.puncher h2 {
     width: 168px;
     height: 23px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -1078,20 +953,18 @@ footer .info
     color: #32425c;    
 }
 
-.filter-back 
-{
+.filter-back {
     width: 220px;
     height: 38px;
     background-color: #f7f3ec;    
 }
 
-.filter 
-{
+.filter {
     width: 53px;
     height: 9px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1100,13 +973,12 @@ footer .info
     color: #000000;    
 }
 
-.price 
-{
+.price {
     width: 46px;
     height: 14px;
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.76;
@@ -1115,25 +987,22 @@ footer .info
     color: #000000;    
 }
 
-.range-back
-{
+.range-back {
     width: 220px;
     height: 80px;
     background-color: #f7f3ec;    
 }
 
-.input-back  
-{
+.input-back {
     width: 95px;
     height: 38px;
     background-color: #f7f3ec;
 }
 
-.input
-{
+.input {
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
@@ -1142,20 +1011,18 @@ footer .info
     color: #000000;    
 }
 
-.sorting-back 
-{
+.sorting-back {
     width: 700px;
     height: 38px;
     background-color: #f7f3ec;    
 }
 
-.sorting-back h3
-{
+.sorting-back h3 {
     width: 82px;
     height: 9px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1164,12 +1031,11 @@ footer .info
     color: #000000;
 }
 
-.sorting-back a
-{
+.sorting-back a {
     opacity: 0.3;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1178,21 +1044,18 @@ footer .info
     color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-back a:hover
-{
+.sorting-back a:hover {
     color: #000000;
 }
 
-.sorting-back a:active
-{
+.sorting-back a:active {
     color: #ee3643    
 }
 
-.sorting li
-{
+.sorting li {
     font-family: 'PT Sans' sans-serif;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.33;
@@ -1202,13 +1065,12 @@ footer .info
     list-style-type: none;
 }
 
-.sorting .suppliers
-{
+.sorting .suppliers {
     width: 141px;
     height: 14px;
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.76;
@@ -1217,13 +1079,12 @@ footer .info
     color: #000000;        
 }
 
-.sorting .supply
-{
+.sorting .supply {
     width: 81px;
     height: 12px;
     font-family: 'PT Sans' sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.76;
@@ -1232,21 +1093,19 @@ footer .info
     color: #000000;
 }
 
-.show-back
-{
+.show-back {
     width: 140px;
     height: 38px;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;    
 }
 
-.show
-{
+.show {
     width: 62px;
     height: 9px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1255,21 +1114,19 @@ footer .info
     color: #000000;    
 }
 
-.next-back
-{
+.next-back {
     width: 38px;
     height: 38px;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;    
 }
 
-.next
-{
+.next {
     width: 7px;
     height: 9px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1278,42 +1135,37 @@ footer .info
     color: #000000;    
 }
 
-.inner-menu li
-{
+.inner-menu li {
     list-style-type: none;    
 }
 
-.next-back:hover
-{
+.next-back:hover {
     width: 38px;
     height: 38px;
     border: solid 1px #bdc6ca;
     background-color: #ffffff;    
 }
 
-.next-back:active
-{
+.next-back:active {
     width: 38px;
     height: 38px;
     border: solid 1px #ee3643;
     background-color: #ffffff;    
 }
 
-.next-page
-{
+.next-page {
     width: 140px;
     height: 38px;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;    
 }
 
-.next-page span
-{
+.next-page span {
     width: 76px;
     height: 11px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
@@ -1322,34 +1174,30 @@ footer .info
     color: #000000;    
 }
 
-.next-page:hover
-{
+.next-page:hover {
     width: 140px;
     height: 38px;
     border: solid 1px #bdc6ca;
     background-color: #ffffff;    
 }
 
-.next-page:active
-{
+.next-page:active {
     width: 140px;
     height: 38px;
     border: solid 1px #ee3643;
     background-color: #ffffff;    
 }
 
-.about-punchers
-{
+.about-punchers {
     width: 1200px;
     height: 261px;
     background-color: #f4f7f9;    
 }
 
-.about-punchers h2
-{
+.about-punchers h2 {
     font-family: 'Cuprum' sans-serif;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -1358,13 +1206,12 @@ footer .info
     color: #000000;
 }
 
-.about-punchers p
-{
+.about-punchers p {
     width: 938px;
     height: 121px;
     font-family: 'PT Sans' sans-serif;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: 400px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.85;
