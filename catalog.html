@@ -17,13 +17,10 @@
             </h1>
             <div class="top-bar">
                 <div class="container">
-                    <div>
-                        <a href="/" class="logo-back logo">Техномарт</a>
-                        <form action="https://echo.htmlacademy.ru" method="post" class="search">
-                            <label for="search">
-                                Поиск
-                            </label>    
-                            <input type="search" name="search" id="search" placeholder="Поиск:">
+                    <div class="logo-search">
+                        <a href="/" class="logo">Техномарт</a>
+                        <form action="https://echo.htmlacademy.ru" method="post">   
+                            <input type="search" name="search" id="search" placeholder="Поиск:" class="search">
                         </form>
                     </div>
                     <div class="shopping-menu">
@@ -41,21 +38,25 @@
             </div>
             <div class="top-menu">
                 <div class="container">
-                    <div>
+                    <div class="menu-additional">
                         <p class="full-name">
                             Интернет-магазин <br>
                             строительных материалов <br>
                             и инструментов для ремонта
                         </p>
-                        <a href="tel:78125550555" class="phone-back phone">+7(812)555-05-55</a>
-                        <address class="adress-header">
-                            г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-                        </address>
-                        <p class="user-back user">
-                            Равшан Джамшутович
-                        </p>
-                        <a href="my_order.html" class="button-personal">Мои заказы</a>
-                        <a href="personal_area.html" class="button-personal">Личный кабинет</a>
+                            <div class="phone-adress">
+                            <a href="tel:78125550555" class="phone-back phone">+7 (812) 555-05-55</a>
+                            <address class="adress-header">
+                                г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+                            </address>
+                        </div>
+                        <div class="entry-register">
+                            <p class="user-back user">
+                                Равшан Джамшутович
+                            </p>
+                            <a href="my_order.html" class="button-personal">Мои заказы</a>
+                            <a href="personal_area.html" class="button-personal">Личный кабинет</a>
+                        </div>
                     </div>
                     <nav class="main-navigation">
                         <ul>
@@ -407,9 +408,10 @@
         </main>
 
         <footer>
-                <div>
-                    <div>
-                        <a href="/" class="logo-footer logo">Техномарт</a>
+            <div class="container">
+                <div class="footer-bar">
+                    <div class="logo-nav">
+                        <a href="/" class="logo-footer">Техномарт</a>
                         <nav class="footer-navigation">
                             <ul>
                                 <li>
@@ -430,11 +432,13 @@
                             </ul>
                         </nav>
                     </div>
-                    <div>
-                        <address class="info">
-                            г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-                        </address>
-                        <a href="tel:78125550555" class="info">+7(812)555-05-55</a>
+                    <div class="company-info">
+                        <div class="tel-info">
+                            <address class="info">
+                                г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+                            </address>
+                            <a href="tel:78125550555" class="info">+7(812)555-05-55</a>
+                        </div>
                         <nav class="additional-navigation">
                             <ul>
                                 <li>
@@ -453,47 +457,56 @@
                         </nav>
                     </div>
                 </div>
-                <div class="footer-contacts-back">
-                    <p>
-                        &#169; 2010-2017 Компания "Техномарт" <br>
-                        Все права защищены
-                    </p>
-                    <ul>
-                        <li class="vk">
-                            <a href="#">
-                                <span>
-                                    Наша страница ВКонтакте
-                                </span>
-                                <img src="img/vk-icon.svg" width="26" height="16" alt="Страница ВКонтакте">
-                            </a>
-                        </li>
-                        <li class="facebook">
-                            <a href="#">
-                                <span>
-                                    Наша страница в Фейсбук
-                                </span>
-                                <img src="img/fb-icon.svg" width="12" height="22" alt="Страница в Фейсбук">
-                            </a>
-                        </li>
-                        <li class="instagram">
-                            <a href="#">
-                                <span>
-                                    Наша страница в Инстаграм
-                                </span>
-                                <img src="img/insta-icon.svg" width="21" height="21" alt="Страница в Инстаграм">
-                            </a>
-                        </li>
-                    </ul>
-                    <p>
-                        Обратная связь: <br>
-                        <a href="mailto:mail@htmlacademy.ru" class="mail">mail@htmlacademy.ru</a>
-                    </p>
-                    <p>
-                        Разработано &#8211; <br>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss" class="website">htmlacademy.ru</a> 
-                    </p>
+            </div>
+            <div class="footer-contacts-back">
+                <div class="container">
+                    <div>
+                        <p>
+                            &#169; 2010-2017 Компания "Техномарт" <br>
+                            Все права защищены
+                        </p>
+                    </div>
+                    <div class="social-networks">
+                        <ul>
+                            <li class="vk">
+                                <a href="#">
+                                    <span>
+                                        VK
+                                    </span>
+                                    <!-- <img src="img/vk-icon.svg" width="26" height="16" alt="Страница ВКонтакте"> -->
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="#">
+                                    <span>
+                                        FB
+                                    </span>
+                                    <!-- <img src="img/fb-icon.svg" width="12" height="22" alt="Страница в Фейсбук"> -->
+                                </a>
+                            </li>
+                            <li class="instagram">
+                                <a href="#">
+                                    <span>
+                                        In
+                                    </span>
+                                    <!-- <img src="img/insta-icon.svg" width="21" height="21" alt="Страница в Инстаграм"> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="add-info">
+                        <p>
+                            Обратная связь: <br>
+                            <a href="mailto:mail@htmlacademy.ru" class="mail">mail@htmlacademy.ru</a>
+                        </p>
+                        <p>
+                            Разработано &#8211; <br>
+                            <a href="https://htmlacademy.ru/intensive/htmlcss" class="website">htmlacademy.ru</a> 
+                        </p>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
             <div>
                 <h2>
