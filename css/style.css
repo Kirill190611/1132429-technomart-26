@@ -1777,7 +1777,7 @@ footer .container {
     border: solid 1px #ee3643;  
 }
 
-.about-punchers {
+.about-puncher {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1794,7 +1794,7 @@ footer .container {
     min-height: 121px;
 }
 
-.about-punchers h2 {
+.about-puncher h2 {
     font-family: 'Cuprum', sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -1803,7 +1803,7 @@ footer .container {
     color: #000000;
 }
 
-.about-punchers p {
+.about-puncher p {
     min-height: 121px;
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
