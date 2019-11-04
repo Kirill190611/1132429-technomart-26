@@ -5,7 +5,6 @@
         <meta name="keywords" content="строительство, ремонт, строительные материалы, инструменты для ремонта, техника для строительства">
         <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
         <title>Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</title>
-        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -85,7 +84,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="main">
             <section class="main-menu">
             <div class="container">
                 <h2 class="visually-hidden">
@@ -93,7 +92,6 @@
                 </h2>
                 <div class="article-top">
                     <article class="article-size materials">
-                        <div class="flag flag-new">New</div>
                         <div class="materials-button">
                             <h3>
                                 Материалы
@@ -102,7 +100,7 @@
                                 <span>На любой вкус</span>      
                             </a>
                         </div>
-                        <img src="img/icon-1.svg" width="44" height="65" alt="Иконка материалы">     
+                        <div class="flag flag-new">New</div>
                     </article>
                     <article class="article-size tool">
                         <div class="tool-button">
@@ -113,7 +111,6 @@
                                 <span>На все случаи</span>          
                             </a>
                         </div>
-                        <img src="img/icon-2.svg" width="75" height="61" alt="Иконка Инструменты">  
                     </article>
                     <article class="article-size equipments">
                         <div class="equipments-button">
@@ -124,7 +121,6 @@
                                 <span>Для стройки</span>        
                             </a>
                         </div>
-                        <img src="img/icon-3.svg" width="78" height="62" alt="Иконка Техника">
                     </article>
                 </div>
                 <div class="article-bottom">
@@ -141,7 +137,7 @@
                             <ul class="slider-list">
                                 <li class="slider-item slide1" id="slide1">
                                     <div class="drill-button">
-                                        <h3>
+                                        <h3 class="slider-title">
                                             Дрели
                                         </h3>
                                         <span>
@@ -152,7 +148,7 @@
                                 </li>
                                 <li class="slider-item slide2" id="slide2">
                                     <div class="drill-button">
-                                        <h3>
+                                        <h3 class="slider-title">
                                             Перфораторы
                                         </h3>
                                         <span>
@@ -174,7 +170,6 @@
                                     <span>На 350 товаров</span>    
                                 </a>
                             </div>
-                            <img src="img/icon-4.svg" width="59" height="72" alt="Иконка Скидки">
                         </article> 
                         <article class="article-size deliveries">
                             <div class="deliveries-button">
@@ -185,7 +180,6 @@
                                     <span>Бесплатно</span>        
                                 </a>
                             </div>
-                            <img src="img/icon-5.svg" width="78" height="63" alt="Иконка Доставка">
                         </article>
                     </div>
                 </div> 
@@ -280,12 +274,12 @@
                                         <span class="item-model">BFG 2000</span>
                                     </a>
                                 </h3>
-                                <p class="price-old">
+                                <p class="price-old last-price">
                                     <span class="visually-hidden">
                                         0 Р.
                                     </span>
                                 </p>
-                                <div class="price-new-button last-price">
+                                <div class="price-new-button">
                                     12500 Р.
                                 </div>
                             </div>
@@ -434,10 +428,10 @@
                                 Деловые линии
                             </li>
                             <li class="transport-item">
-                                Авторейдинг
+                                Автотрейдинг
                             </li>
                             <li class="transport-item">
-                                ЖелДорЭкспредиция
+                                ЖелДорЭкспедиция
                             </li>
                         </ul>
                         <a href="company.html" class="company-button">Подробнее о компании</a>
@@ -482,11 +476,11 @@
                         </nav>
                     </div>
                     <div class="company-info">
-                        <div class="tel-info">
+                        <div class="phone-info">
                             <address class="info">
                                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                             </address>
-                            <a href="tel:78125550555" class="info">+7 (812) 555-05-55</a>
+                            <a href="tel:78125550555" class="info phone-number">+7 (812) 555-05-55</a>
                         </div>
                         <nav class="additional-navigation">
                             <ul>
@@ -509,7 +503,7 @@
             </div>
             <div class="footer-contacts-back">
                 <div class="container">
-                    <div>
+                    <div class="company-data">
                         <p>
                             &#169; 2010-2017 Компания «Техномарт» <br>
                             Все права защищены
@@ -624,6 +618,6 @@
             </button>
         </section>
 
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
